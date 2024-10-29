@@ -1,0 +1,1 @@
+Jeg skal lage en simulering av en veske, har ikke peiling på hvordan dette kommer til å gå

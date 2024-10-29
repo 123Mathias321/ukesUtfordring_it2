@@ -2,23 +2,19 @@ posArrUsortert = []
 inndelingerPerSide = 2
 storelse_kube = 20
 
-for i in range(1,11):
-    for j in range(1,11):
-        for k in range(1,11):
+for i in range(1,5):
+    for j in range(1,5):
+        for k in range(1,5):
             posArrUsortert.append([k,j,i])
 
 
 #sorterer posArr
 
-posArr = []
-for i in range(inndelingerPerSide):
-    posArr.append([])
-    for j in range(inndelingerPerSide):
-        posArr[i].append([])
-        for k in range(inndelingerPerSide):
-            posArr[i][j].append([])
+posArr = [[[0 for _ in range(inndelingerPerSide)] for _ in range(inndelingerPerSide)] for _ in range(inndelingerPerSide)]
 
 print(posArr)
 
-#for element in posArrUsortert:
+underKubeLengde = storelse_kube/inndelingerPerSide
 
+for element in posArrUsortert:
+    x_retning = element[0] // underKubeLengde
